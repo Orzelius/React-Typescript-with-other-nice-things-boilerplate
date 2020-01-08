@@ -4,12 +4,19 @@ const path = require('path'),
 
 
 module.exports = {
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        historyApiFallback: true,
+        compress: true,
+        port: 8080
+    },
     entry: {
         app: ['./src/app/index.tsx'],
         vendor: ['react', 'react-dom']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
         filename: 'js/[name].bundle.js'
     },
     devtool: 'source-map',
