@@ -19,3 +19,6 @@ or
  and then
 
     npm run start
+
+
+### Also feel free to change any lint rules :D
