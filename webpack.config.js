@@ -1,3 +1,4 @@
+/* eslint-disable */
 const path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -15,7 +16,7 @@ module.exports = {
         vendor: ['react', 'react-dom']
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         publicPath: '/',
         filename: 'js/[name].bundle.js'
     },
